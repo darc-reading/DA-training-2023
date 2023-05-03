@@ -1,5 +1,5 @@
 import numpy as np
-from tools_old.l96 import l96num
+from tools.hybrid.l96 import l96num
 from scipy.optimize import fsolve
 
 def var3d(Xt,t,x,H,y,period_obs,gridobs,B0sq,invR,\

@@ -4,7 +4,7 @@ import scipy as sp
 import random
 import time
 #from joblib import Parallel, delayed
-from tools_old.l96 import l96num
+from tools.hybrid.l96 import l96num
 
 def etkf_l96(Xt,t,x,M,nx_obs,H,R,y,period_obs,lam,locmatrix,\
     opcini=1,adap=0,rho0=0.05,noiseswitch=0,Qsq=None,smooth=0):

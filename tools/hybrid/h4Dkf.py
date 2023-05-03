@@ -1,7 +1,7 @@
 import numpy as np
-from tools_old.l96 import l96num
-from tools_old.etkf16 import etkf_l96
-from tools_old.var4dfile import var4d
+from tools.hybrid.l96 import l96num
+from tools.hybrid.etkf16 import etkf_l96
+from tools.hybrid.var4dfile import var4d
 
 
 def etkf4DVar(xguess,t,x,R,invR,H,y,period_obs,obsperwin,gridobs,nx_obs,B,Bsq,\

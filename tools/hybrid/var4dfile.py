@@ -1,7 +1,7 @@
 import numpy as np
-from tools_old.l96 import l96num
+from tools.hybrid.l96 import l96num
 from scipy.optimize import fsolve
-from tools_old.transmat import transmat_l96
+from tools.hybrid.transmat import transmat_l96
 
 def var4d(Xt,t,x,H,y,period_obs,obsperwin,gridobs,Bsq,invR,\
     invB=None,invQ=None,Qsq=None,noiseswitch=0,precond=1,scwc='sc'):

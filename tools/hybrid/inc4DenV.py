@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.optimize import fsolve
-from tools_old.l96 import l96num
-from tools_old.etkf16 import etkf_l96
+from tools.hybrid.l96 import l96num
+from tools.hybrid.etkf16 import etkf_l96
 
 def envar(Xt,t,x,R,invR,H,y,period_obs,obsperwin,gridobs,nx_obs,Bsq,\
     lam,Lxx,Lxy,locenvar,M,invBc=None,loc_obs=None,invQ=None,Qsq=None,\

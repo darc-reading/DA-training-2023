@@ -4,7 +4,7 @@ Created on Thu Mar 10 21:58:16 2016
 @author: jamezcua
 """
 import numpy as np
-from tools_old.l96 import l96num
+from tools.hybrid.l96 import l96num
 from scipy.linalg import circulant
 
 

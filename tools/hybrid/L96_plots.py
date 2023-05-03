@@ -8,7 +8,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib import ticker
 import math
-from tools_old.rmse_spread import rmse_spread 
+from tools.hybrid.rmse_spread import rmse_spread 
 
 #==========================================================
 # Plot covariance 
