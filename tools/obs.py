@@ -63,7 +63,7 @@ def createH(obsgrid, nx, footprint=None):
         centre = nx // 2
         observed = np.arange(centre - nx // 4, centre + nx // 4)
         distance = centre - observed
-        H[0] = np.exp(factor * distance * distance)
+        H[0, centre-nx//4-1:centre+nx//4] = np.exp(factor * distance * distance)
         # normalise
         H[0] /= np.sum(H[0])
     elif obsgrid == "foot_6":
