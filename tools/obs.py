@@ -61,7 +61,7 @@ def createH(obsgrid, nx, footprint=None):
         L = nx / 4.0  # Lengthscale of the footprint
         factor = -1.0 / (2.0 * L * L)
         centre = nx // 2
-        observed = np.arange(centre + nx // 4, centre + nx // 4)
+        observed = np.arange(centre - nx // 4, centre + nx // 4)
         distance = centre - observed
         H[0] = np.exp(factor * distance * distance)
         # normalise
